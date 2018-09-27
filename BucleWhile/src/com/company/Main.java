@@ -58,13 +58,23 @@ public class Main
 
             case 11:
                 {
-                    int i;
+                    int i, contador;
+                    contador = 0;
+
                     i = 2;
-                    while(i <= 20)
+                    while(i < 100)
                     {
-                        System.out.println(i);
-                        i = i + 2;
+                        if(i %2 == 0)
+                        {
+                            contador++;
+                            if(contador <= 30)
+                            {
+                                System.out.println(i);
+                            }
+                        }
+                        i++;
                     }
+
                 }
                 break;
 
