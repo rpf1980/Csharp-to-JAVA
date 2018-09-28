@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main
 {
 
@@ -9,6 +11,9 @@ public class Main
         System.out.println("=============================");
         System.out.println("MENÚ FUNCIONES cSharp to Java");
         System.out.println("=============================");
+        System.out.println("[1] ");
+        System.out.println("[2] ");
+        System.out.println();
 
     }
 }
