@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0e3b6b6f-ab27-417c-94a3-2ce87061fdc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,8 +60,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="481" />
-    <option name="y" value="-12" />
+    <option name="x" value="711" />
+    <option name="y" value="360" />
     <option name="width" value="981" />
     <option name="height" value="1092" />
   </component>
@@ -78,7 +77,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="D:/VueltaAempezar2/JAVA/BucleWhile" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -115,6 +114,14 @@
       <option name="presentableId" value="Default" />
       <updated>1538150122998</updated>
     </task>
+    <task id="LOCAL-00001" summary="Cambios: importo librería Scanner">
+      <created>1538152391597</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538152391597</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
