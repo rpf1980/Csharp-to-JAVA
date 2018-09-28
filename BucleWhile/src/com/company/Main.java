@@ -60,21 +60,17 @@ public class Main
                 {
                     int i, contador;
                     contador = 0;
-
+                    
                     i = 2;
-                    while(i < 100)
+                    while(contador < 10)
                     {
                         if(i %2 == 0)
                         {
                             contador++;
-                            if(contador <= 30)
-                            {
-                                System.out.println(i);
-                            }
+                            System.out.println(i);
                         }
                         i++;
                     }
-
                 }
                 break;
 
