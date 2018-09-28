@@ -10,7 +10,7 @@ public class Main
     {
         Scanner sc = new Scanner(System.in);
         System.out.println("==================");
-        System.out.println("BUCLE WHILE a JAVA");
+        System.out.println("BUCLE WHILE a JAVA vs JAVA");
         System.out.println("==================");
         System.out.println("[9] Números del 10 al 20");
         System.out.println("[10] Impares entre 1 y 10");
