@@ -32,6 +32,37 @@ public class Main
         return b;
     }
 
+    static void TablaMultiplicar(int n)
+    {
+        int i;
+        for(i = 1; i <= 10; i++)
+        {
+            System.out.println(n + " x " + i + " = " + (n * i));
+        }
+    }
+
+    static void ImprimeSerie(int a, int b)
+    {
+
+        if(a < b)
+        {
+            for(a = a; a <= b; a++)
+            {
+                System.out.println(a);
+            }
+        }
+        else
+        {
+            if(a > b)
+            {
+                for(a = a; a >= b; a--)
+                {
+                    System.out.println(a);
+                }
+            }
+        }
+    }
+
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
@@ -40,7 +71,8 @@ public class Main
         System.out.println("=============================");
         System.out.println("[1] Par");
         System.out.println("[2] Bisiesto");
-        System.out.println("[3] ");
+        System.out.println("[3] TablaMultiplicar");
+        System.out.println("[4] ImprimeSerie");
         System.out.println();
         System.out.print("Elige opción: ");
         int opcion = sc.nextInt();
@@ -75,6 +107,28 @@ public class Main
 
                 bisiesto = Bisiesto(anio);
                 System.out.println(bisiesto);
+            }
+            break;
+
+            case 3:
+            {
+                int n;
+                System.out.println("Escribe un número para mostrarte su tabla de multiplicar: ");
+                n = sc.nextInt();
+
+                TablaMultiplicar(n);
+            }
+            break;
+
+            case 4:
+            {
+                int a, b;
+                System.out.print("Escribe primer número: ");
+                a = sc.nextInt();
+                System.out.print("Escribe segundo número: ");
+                b = sc.nextInt();
+
+                ImprimeSerie(a, b);
             }
             break;
         }
