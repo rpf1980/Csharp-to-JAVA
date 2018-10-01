@@ -63,6 +63,119 @@ public class Main
         }
     }
 
+    static int Signo(int n)
+    {
+        int devuelve = 4;
+        if(n < 0)
+        {
+            devuelve = -1;
+        }
+        else
+        {
+            if(n == 0)
+            {
+                devuelve = 0;
+            }
+            else
+            {
+                if(n > 0)
+                {
+                    devuelve = 1;
+                }
+            }
+        }
+        return devuelve;
+    }
+
+    static int Max(int a, int b)
+    {
+        int mayor = 0;
+        if(a > b)
+        {
+            mayor = a;
+        }
+        else
+        {
+            mayor = b;
+        }
+        return mayor;
+    }
+
+    static int Min(int a, int b)
+    {
+        int menor = 8;
+
+        if(a < b)
+        {
+            menor = a;
+        }
+        else
+        {
+            menor = b;
+        }
+        return menor;
+    }
+
+    static void MCD(int a, int b)
+    {
+        //MCD es el mayor número por el que se divide cada uno de los números dados
+
+        //Primero buscamos cual es el menor de los dos
+
+        int divisor = Min(a,b);
+
+        int i = divisor;
+        //Ahora empezamos a probar si ese número es el mcd o lo son
+        //los sucesivos inferiores a él
+        while((a %divisor != 0 || b %divisor != 0) && divisor > 1)
+        {
+            divisor--;
+        }
+        //Para salir del bucle deben cumplirse dos condiciones:
+        //- divisor es mcd de ambos números
+        //- divisor ha llegado a valer 1, con lo cual ese es el mcd
+        System.out.println(divisor);
+    }
+
+    static void MCM(int a, int b)
+    {
+        //(MCM) de dos números enteros a y b es número natural mínimo que se divide por a y b.
+
+        //Primero seleccionamos el mayor de los dos
+
+        int multiplo = Max(a, b);
+
+        //Y ahora vamos probando si ese nº es el mcm o los son los sucesivos superiores a él.
+        int i = multiplo;
+        while(multiplo %a != 0 || multiplo %b != 0)
+        {
+            multiplo++;
+        }
+        System.out.println(multiplo);
+    }
+
+    static boolean Primo(int n)
+    {
+
+        int i, divisores = 0;
+        //Primero recorremos el número que nos pasen. Desde el 1 hasta el nº en sí.
+        for(i = 1; i <= n; i++)
+        {
+            if(n %i == 0)
+            {
+                divisores++;
+            }
+        }
+        if(divisores <= 2)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
@@ -73,6 +186,12 @@ public class Main
         System.out.println("[2] Bisiesto");
         System.out.println("[3] TablaMultiplicar");
         System.out.println("[4] ImprimeSerie");
+        System.out.println("[5] Signo");
+        System.out.println("[6] Max");
+        System.out.println("[7] Min");
+        System.out.println("[8] MCD");
+        System.out.println("[9] MCM");
+        System.out.println("[10] Primo");
         System.out.println();
         System.out.print("Elige opción: ");
         int opcion = sc.nextInt();
@@ -129,6 +248,100 @@ public class Main
                 b = sc.nextInt();
 
                 ImprimeSerie(a, b);
+            }
+            break;
+
+            case 5:
+            {
+                //Escribe una función “Signo” a la que le pasemos un número y nos devuelva “1” si es
+                //positivo, “0” si es cero y “-1” si es negativo.
+
+                int n, respuesta;
+
+                System.out.println("Escribe un número: ");
+                n = sc.nextInt();
+
+                respuesta = Signo(n);
+                System.out.println(respuesta);
+            }
+            break;
+
+            case 6:
+            {
+                //Escribe una función “Max” que nos devuelva el mayor de los dos números que le
+                //pasemos por parámetro.
+
+                int a, b, mayor;
+                System.out.print("Escribe un número: ");
+                a = sc.nextInt();
+                System.out.print("Escribe otro número: ");
+                b = sc.nextInt();
+
+                mayor = Max(a, b);
+                System.out.println("El mayor de " + a + " y " + b + " = " + mayor);
+            }
+            break;
+
+            case 7:
+            {
+                // Escribe una función “Min” que nos devuelva el menor de los dos números que le
+                //pasemos por parámetro.
+
+                int a, b, menor;
+                System.out.print("Escribe un número: ");
+                a = sc.nextInt();
+                System.out.print("Escribe otro número: ");
+                b = sc.nextInt();
+
+                menor = Min(a, b);
+                System.out.println("El menor de " + a + " y " + b + " = " + menor);
+            }
+            break;
+
+            case 8:
+            {
+                //Escribe una función que nos calcule el “MCD” de dos números.
+
+                int a, b;
+
+                System.out.print("Escribe primer número: ");
+                a = sc.nextInt();
+                System.out.print("Escribe segundo número: ");
+                b = sc.nextInt();
+
+                MCD(a,b);
+            }
+            break;
+
+            case 9:
+            {
+                //Escribe una función que nos calcule el “MCM” de dos números.
+
+                int a, b, mcm;
+
+                System.out.print("Escribe primer número: ");
+                a = sc.nextInt();
+                System.out.print("Escribe primer número: ");
+                b = sc.nextInt();
+
+                System.out.print("El MCM de " + a + " y " + b + " = ");
+                MCM(a,b);
+
+            }
+            break;
+
+            case 10:
+            {
+                //Escribe una función “Primo” que nos devuelva “verdadero” si el número que le
+                //pasamos por parámetro es primo y “falso” en caso contrario.
+
+                int n;
+                boolean primo;
+                System.out.println("Escribe un número para decirte si es primo o no: ");
+                n = sc.nextInt();
+
+                primo = Primo(n);
+                System.out.println(primo);
             }
             break;
         }
