@@ -291,7 +291,27 @@ public class Main
         return factorial;
     }
 
-
+    static int DiasMes(int mes)
+    {
+        int totaldias;
+        switch (mes)
+        {
+            case 1: totaldias = 31; break;
+            case 2: totaldias = 28; break;
+            case 3: totaldias = 31; break;
+            case 4: totaldias = 30; break;
+            case 5: totaldias = 31; break;
+            case 6: totaldias = 30; break;
+            case 7: totaldias = 31; break;
+            case 8: totaldias = 31; break;
+            case 9: totaldias = 30; break;
+            case 10: totaldias = 31; break;
+            case 11: totaldias = 30; break;
+            case 12: totaldias = 31; break;
+            default: totaldias = 32; break;
+        }
+        return totaldias;
+    }
 
     public static void main(String[] args)
     {
@@ -320,6 +340,7 @@ public class Main
         System.out.println("[19] Lee3");
         System.out.println("[20] Inc");
         System.out.println("[21] ResolucionCamara");
+        System.out.println("[22] DiasMes");
         System.out.println();
         System.out.print("Elige opción: ");
         int opcion = sc.nextInt();
@@ -620,6 +641,20 @@ public class Main
                 //que tiene una cámara digital (puede ser un double) y nos dice cuál es la resolución
                 //máxima de las fotos que hace la cámara. Los valores los devolverá en dos variables que
                 //le pasamos por referencia (x, y).
+            }
+            break;
+
+            case 22:
+            {
+                //Escribe  una  función  “DiasMes”,  a  la  que  le  pasamos  un  mes  (en  formato  numérico
+                //1=Enero, 2=Febrero, etc.)y nos dice el número de días que tiene ese mes.
+
+                int mes, dias;
+                System.out.println("Escribe el mes en formato numérico (Enero=1, Febrero=2, etc...");
+                mes = sc.nextInt();
+
+                dias = DiasMes(mes);
+                System.out.println("El mes " + mes + " tiene " + dias + " dias.");
             }
             break;
         }

@@ -48,14 +48,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7081" />
-          <entry key="txt" value="48" />
+          <entry key="java" value="8544" />
+          <entry key="txt" value="67" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7081" />
-          <entry key="PLAIN_TEXT" value="48" />
+          <entry key="JAVA" value="8544" />
+          <entry key="PLAIN_TEXT" value="67" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open" />
@@ -68,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="662">
-              <caret line="532" column="24" lean-forward="true" selection-start-line="532" selection-start-column="24" selection-end-line="532" selection-end-column="24" />
+            <state relative-caret-position="459">
+              <caret line="312" column="24" selection-start-line="312" selection-start-column="24" selection-end-line="312" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,7 +187,21 @@
       <option name="project" value="LOCAL" />
       <updated>1538457573513</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ejercicio 14, 15 y 16 de funciones.">
+      <created>1538459849030</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1538459849030</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Ejercicio 17 y 18 funciones.">
+      <created>1538466068271</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1538466068271</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -232,13 +246,15 @@
     <MESSAGE value="Ejercicio 5 al 10 de funciones." />
     <MESSAGE value="Ejercicio 11 de funciones." />
     <MESSAGE value="Ejercicio 12 y 13 de funciones." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 12 y 13 de funciones." />
+    <MESSAGE value="Ejercicio 14, 15 y 16 de funciones." />
+    <MESSAGE value="Ejercicio 17 y 18 funciones." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 17 y 18 funciones." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="532" column="24" lean-forward="true" selection-start-line="532" selection-start-column="24" selection-end-line="532" selection-end-column="24" />
+        <state relative-caret-position="459">
+          <caret line="312" column="24" selection-start-line="312" selection-start-column="24" selection-end-line="312" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
