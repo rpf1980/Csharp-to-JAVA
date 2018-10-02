@@ -1,5 +1,6 @@
 package com.company;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Main
@@ -182,6 +183,23 @@ public class Main
         System.out.println(area);
     }
 
+    static double PulgadasACentimetros(double pulgadas)
+    {
+        // 1 pulgada = 2.54 cm
+
+        double cm = pulgadas * 2.54;
+        return cm;
+    }
+
+    static double CentimetrosAPulgadas(double cm)
+    {
+        // 1 pulgada = 2.54 cm
+
+        double pulgadas = cm / 2.54;
+
+        return pulgadas;
+    }
+
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
@@ -199,6 +217,8 @@ public class Main
         System.out.println("[9] MCM");
         System.out.println("[10] Primo");
         System.out.println("[11] AreaTriangulo");
+        System.out.println("[12] PulgadasACentimetros");
+        System.out.println("[13] CentímetrosAPulgadas");
         System.out.println();
         System.out.print("Elige opción: ");
         int opcion = sc.nextInt();
@@ -366,6 +386,39 @@ public class Main
                 System.out.print("El area del triangulo con base " + b +
                         " y altura " + h + " es ");
                 AreaTriangulo(b, h);
+            }
+            break;
+
+            case 12:
+            {
+                //Escribe una función “PulgadasACentimetros” a la que le pases un valor en pulgadas (de
+                //tipo double) y te devuelva el valor en centímetros. Haz también la función
+                //“CentímetrosAPulgadas”.
+
+                double pulgadas, cm;
+                System.out.print("Escribe pulgadas: ");
+                pulgadas = sc.nextDouble();
+
+                cm = PulgadasACentimetros(pulgadas);
+                System.out.println(cm);
+
+            }
+            break;
+
+            case 13:
+            {
+                //Función que realiza la conversión de centímetros a pulgadas
+
+                //Instanciamos un objeto de la clase DecimalFormat para darle tan solo 2 decimales al resultado
+
+                DecimalFormat df = new DecimalFormat("#.00");
+
+                double cm, pulgadas;
+                System.out.print("Escribe cm: ");
+                cm = sc.nextDouble();
+
+                pulgadas = CentimetrosAPulgadas(cm);
+                System.out.println(df.format(pulgadas));
             }
             break;
         }
