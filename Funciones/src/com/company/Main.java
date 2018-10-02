@@ -200,6 +200,75 @@ public class Main
         return pulgadas;
     }
 
+    static String NotaEnTexto(double nota)
+    {
+        String calificacion = "";
+
+        if(nota >= 0 && nota < 5)
+        {
+            calificacion = "Suspenso";
+        }
+        else
+        {
+            if(nota >= 5 && nota < 6)
+            {
+                calificacion = "Suficiente";
+            }
+            else
+            {
+                if(nota >= 6 && nota < 7)
+                {
+                    calificacion = "Bien";
+                }
+                else
+                {
+                    if(nota >= 7 && nota < 9)
+                    {
+                        calificacion = "Notable";
+                    }
+                    else
+                    {
+                        if(nota >= 9 && nota <= 10)
+                        {
+                            calificacion = "Sobresaliente";
+                        }
+                        else
+                        {
+                            System.out.println("NOTA NO VÁLIDA");
+                        }
+                    }
+                }
+            }
+        }
+        return calificacion;
+    }
+
+    static void LeeNatural(int n)
+    {
+        Scanner natural = new Scanner(System.in);
+        while(n <= 0)
+        {
+            System.out.print("Escribe un número: ");
+            n = natural.nextInt();
+        }
+    }
+
+    static void LeeNumero(int a, int b)
+    {
+        Scanner leenumero = new Scanner(System.in);
+        int n;
+        System.out.println("Escribe un número entre " + a + " y " + b);
+        n = leenumero.nextInt();
+
+        while(n < a || n > b)
+        {
+            System.out.println("El número se sale del rango." + '\n' +
+                    "Vuelva a escribir otro por favor.");
+            n = leenumero.nextInt();
+        }
+
+    }
+
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
@@ -219,6 +288,9 @@ public class Main
         System.out.println("[11] AreaTriangulo");
         System.out.println("[12] PulgadasACentimetros");
         System.out.println("[13] CentímetrosAPulgadas");
+        System.out.println("[14] NotaEnTexto");
+        System.out.println("[15] LeeNatural");
+        System.out.println("[16] LeeNumero");
         System.out.println();
         System.out.print("Elige opción: ");
         int opcion = sc.nextInt();
@@ -419,6 +491,50 @@ public class Main
 
                 pulgadas = CentimetrosAPulgadas(cm);
                 System.out.println(df.format(pulgadas));
+            }
+            break;
+
+            case 14:
+            {
+                //Escribe una función “NotaEnTexto” a la que le pasamos la nota de un alumno como un
+                //double y nos devolverá la calificación en formato texto (“aprobado”, “suficiente”, etc.).
+
+                String resultado;
+                double nota;
+                System.out.print("Escribe nota del alumno: ");
+                nota = sc.nextDouble();
+
+                resultado = NotaEnTexto(nota);
+                System.out.println(resultado);
+
+            }
+            break;
+
+            case 15:
+            {
+                // Escribe una función “LeeNatural” que nos lea un número natural desde el teclado. La
+                //función nos pondrá un texto en el que se nos indica que introduzcamos un número y
+                //después nos leerá el número del teclado. Si el número introducido es 0 o negativo, nos
+                //volverá a pedir otro número.
+
+                int n;
+                System.out.print("Escribe un número: ");
+                n = sc.nextInt();
+
+                LeeNatural(n);
+            }
+
+            case 16:
+            {
+                //Escribe una función “LeeNúmero” a la que le pasas dos parámetros (a y b) y nos lee del
+                //teclado un número comprendido entre a y b (ambos incluidos). Si el número no es
+                //correcto, te vuelve a pedir que lo introduzcas.
+
+                int a, b;
+                a = 10;
+                b = 20;
+
+                LeeNumero(a, b);
             }
             break;
         }
