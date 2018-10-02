@@ -176,6 +176,12 @@ public class Main
         }
     }
 
+    static void AreaTriangulo(int b, int h)
+    {
+        int area = (b * h) / 2;
+        System.out.println(area);
+    }
+
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
@@ -192,6 +198,7 @@ public class Main
         System.out.println("[8] MCD");
         System.out.println("[9] MCM");
         System.out.println("[10] Primo");
+        System.out.println("[11] AreaTriangulo");
         System.out.println();
         System.out.print("Elige opción: ");
         int opcion = sc.nextInt();
@@ -342,6 +349,23 @@ public class Main
 
                 primo = Primo(n);
                 System.out.println(primo);
+            }
+            break;
+
+            case 11:
+            {
+                //Escribe una función “AreaTriangulo” que te calcule el área de un triángulo. Habrá que
+                //pasarle como parámetros la base y la altura.
+
+                int b, h;
+                System.out.print("Escribe la base: ");
+                b = sc.nextInt();
+                System.out.print("Escribe la altura: ");
+                h = sc.nextInt();
+
+                System.out.print("El area del triangulo con base " + b +
+                        " y altura " + h + " es ");
+                AreaTriangulo(b, h);
             }
             break;
         }
