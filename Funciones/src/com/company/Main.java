@@ -1,5 +1,6 @@
 package com.company;
 
+import java.sql.SQLOutput;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
@@ -266,8 +267,31 @@ public class Main
                     "Vuelva a escribir otro por favor.");
             n = leenumero.nextInt();
         }
-
     }
+
+    static int Elevado(int a, int b)
+    {
+        int resultado = 1;
+        for(int i = 1; i <= b; i++)
+        {
+            resultado = resultado * a;
+
+        }
+        return resultado;
+    }
+
+    static int Factorial(int n)
+    {
+        int factorial = 1;
+        int i;
+        for(i = 1; i <= n; i++)
+        {
+            factorial = factorial * i;
+        }
+        return factorial;
+    }
+
+
 
     public static void main(String[] args)
     {
@@ -291,6 +315,11 @@ public class Main
         System.out.println("[14] NotaEnTexto");
         System.out.println("[15] LeeNatural");
         System.out.println("[16] LeeNumero");
+        System.out.println("[17] Elevado");
+        System.out.println("[18] Factorial");
+        System.out.println("[19] Lee3");
+        System.out.println("[20] Inc");
+        System.out.println("[21] ResolucionCamara");
         System.out.println();
         System.out.print("Elige opción: ");
         int opcion = sc.nextInt();
@@ -535,6 +564,62 @@ public class Main
                 b = 20;
 
                 LeeNumero(a, b);
+            }
+            break;
+
+            case 17:
+            {
+                //Escribe una función “Elevado” a la que le pasas dos números enteros (a y b) y te
+                //devuelve el valor de “a” elevado a “b” (sin usar la función Math.Pow) (o sea,
+                //multiplicando un número muchas veces).
+
+                int a, b, resultado;
+                System.out.print("Escribe número: ");
+                a = sc.nextInt();
+                System.out.print("Escribe exponente: ");
+                b = sc.nextInt();
+
+                resultado = Elevado(a, b);
+                System.out.println(resultado);
+            }
+            break;
+
+            case 18:
+            {
+                //Escribe una función “Factorial” que nos calcule el factorial de un número entero.
+                //Ejemplo:  5! = 5 x 4 x 3 x 2 x 1 --> 120
+
+                int n, factorial;
+                System.out.print("Escribe un número para calcular su factorial: ");
+                n = sc.nextInt();
+
+                factorial = Factorial(n);
+                System.out.println(n + "! factorial = " + factorial);
+
+            }
+            break;
+
+            case 19:
+            {
+                //Escribe una función “Lee3” que te lea tres números del teclado. Para ello habrá que
+                //pasarle tres parámetros (a, b, c) por referencia.
+            }
+            break;
+
+            case 20:
+            {
+                //Escribe una función “Inc” que nos incremente el valor de una variable. Para ello, le
+                //pasaremos la variable por referencia para que nos la pueda incrementar. Escribe
+                //también la función “Dec”.
+            }
+            break;
+
+            case 21:
+            {
+                //Escribe una función “ResolucionCamara” a la que le pasas el número de MegaPixels
+                //que tiene una cámara digital (puede ser un double) y nos dice cuál es la resolución
+                //máxima de las fotos que hace la cámara. Los valores los devolverá en dos variables que
+                //le pasamos por referencia (x, y).
             }
             break;
         }
