@@ -313,6 +313,22 @@ public class Main
         return totaldias;
     }
 
+    static int DiasMes2(int mes, int anio)
+    {
+        int dias;
+
+        if(Bisiesto(anio) && mes == 2)
+        {
+            dias = 29;
+        }
+        else
+        {
+            dias = DiasMes(mes);
+        }
+        return dias;
+    }
+
+
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
@@ -341,6 +357,7 @@ public class Main
         System.out.println("[20] Inc");
         System.out.println("[21] ResolucionCamara");
         System.out.println("[22] DiasMes");
+        System.out.println("[23] DiasMes2");
         System.out.println();
         System.out.print("Elige opción: ");
         int opcion = sc.nextInt();
@@ -655,6 +672,26 @@ public class Main
 
                 dias = DiasMes(mes);
                 System.out.println("El mes " + mes + " tiene " + dias + " dias.");
+            }
+            break;
+
+            case 23:
+            {
+                // Debido a que en los años bisiestos el mes de Febrero tiene 29 días en lugar de 28,
+                //necesitaremos  también  dar  el  año  para  conseguir  el  resultado  correcto.  Escribe  la
+                //función  “DiasMes2”  a  la  que  le  pasas  un  mes  y  un  año  (ambos  enteros)  y  te  dice
+                //cuántos  días  tiene  ese  mes,  teniendo  en  cuenta  si  el  año  es  bisiesto  o  no  (NOTA:
+                //Podéis usar la función “Bisiesto” que hicimos con anterioridad).
+
+                int mes, anio, resultado;
+
+                System.out.print("Escribe el mes: ");
+                mes = sc.nextInt();
+                System.out.print("Escribe el año: ");
+                anio = sc.nextInt();
+
+                resultado = DiasMes2(mes, anio);
+                System.out.println(resultado);
             }
             break;
         }

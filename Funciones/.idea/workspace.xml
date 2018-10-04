@@ -39,23 +39,23 @@
     <session id="-574260648">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="8544" />
-          <entry key="txt" value="67" />
+          <entry key="java" value="8948" />
+          <entry key="txt" value="80" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8544" />
-          <entry key="PLAIN_TEXT" value="67" />
+          <entry key="JAVA" value="8948" />
+          <entry key="PLAIN_TEXT" value="80" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open" />
@@ -68,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="312" column="24" selection-start-line="312" selection-start-column="24" selection-end-line="312" selection-end-column="24" />
+            <state relative-caret-position="135">
+              <caret line="319" column="36" selection-start-line="319" selection-start-column="36" selection-end-line="319" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,9 +90,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="949" />
-    <option name="width" value="980" />
-    <option name="height" value="1091" />
+    <option name="x" value="948" />
+    <option name="width" value="981" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -102,7 +102,7 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538411032629" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538657672294" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -201,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538466068271</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Ejercicio 22 de funciones.">
+      <created>1538467145679</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1538467145679</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -248,13 +255,14 @@
     <MESSAGE value="Ejercicio 12 y 13 de funciones." />
     <MESSAGE value="Ejercicio 14, 15 y 16 de funciones." />
     <MESSAGE value="Ejercicio 17 y 18 funciones." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 17 y 18 funciones." />
+    <MESSAGE value="Ejercicio 22 de funciones." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 22 de funciones." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="312" column="24" selection-start-line="312" selection-start-column="24" selection-end-line="312" selection-end-column="24" />
+        <state relative-caret-position="135">
+          <caret line="319" column="36" selection-start-line="319" selection-start-column="36" selection-end-line="319" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
