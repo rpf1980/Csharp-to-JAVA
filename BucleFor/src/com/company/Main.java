@@ -157,7 +157,7 @@ public class Main
                     System.out.println("Escribe otro: ");
                     b = sc.nextInt();
 
-                    while(a < b)
+                    if(a < b)
                     {
                         for(a = a; a <= b; a++)
                         {
@@ -167,7 +167,7 @@ public class Main
                             }
                         }
                     }
-                    while(b < a)
+                    else
                     {
                         for(b = b; b <= a; b++)
                         {
