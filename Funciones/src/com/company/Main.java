@@ -328,6 +328,20 @@ public class Main
         return dias;
     }
 
+    static int DiasTranscurridos(int dia, int mes, int anio)
+    {
+        //Función que calcula los días transcurridos desde primero de año hasta la fecha que se pase por parámetro
+
+        int diaHoy = 0;
+        int i;
+        for(i = 1; i < mes; i++)
+        {
+            diaHoy = DiasMes2(i, anio);
+        }
+        diaHoy = diaHoy + dia;
+        return diaHoy;
+    }
+
 
     public static void main(String[] args)
     {
@@ -358,6 +372,7 @@ public class Main
         System.out.println("[21] ResolucionCamara");
         System.out.println("[22] DiasMes");
         System.out.println("[23] DiasMes2");
+        System.out.println("[24] DiasTranscurridos");
         System.out.println();
         System.out.print("Elige opción: ");
         int opcion = sc.nextInt();
@@ -692,6 +707,34 @@ public class Main
 
                 resultado = DiasMes2(mes, anio);
                 System.out.println(resultado);
+            }
+            break;
+
+            case 24:
+            {
+                //Escribe  una  función  “DiasTranscurridos”  a  la que  le  pasamos  tres  enteros,  el día,  el
+                //mes y el año, y nos dice cuántos días han pasado desde el inicio del año hasta ese día.
+                //Así, el 1 de enero será el día 1 y el 31 de diciembre será el 365 ó 366 dependiendo de
+                //si el año es bisiesto o no.
+
+                int dias;
+                int d, m, a;
+                System.out.print("Escribe día: ");
+                d = sc.nextInt();
+                System.out.print("Escribe mes: ");
+                m = sc.nextInt();
+                System.out.print("Escribe año: ");
+                a = sc.nextInt();
+
+                dias = DiasTranscurridos(d, m, a);
+                System.out.println("Fecha actual: ");
+                System.out.println();
+                System.out.println("Día = " + d);
+                System.out.println("Mes = " + m);
+                System.out.println("Año = " + a);
+                System.out.println();
+                System.out.println("Transcurren " + dias + " días desde la fecha indicada");
+
             }
             break;
         }
