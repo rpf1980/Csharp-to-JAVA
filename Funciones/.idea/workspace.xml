@@ -49,14 +49,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="12037" />
-          <entry key="txt" value="82" />
+          <entry key="java" value="12090" />
+          <entry key="txt" value="89" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12037" />
-          <entry key="PLAIN_TEXT" value="82" />
+          <entry key="JAVA" value="12090" />
+          <entry key="PLAIN_TEXT" value="89" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open" />
@@ -69,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="446" column="34" lean-forward="true" selection-start-line="446" selection-start-column="34" selection-end-line="446" selection-end-column="34" />
+            <state relative-caret-position="449">
+              <caret line="913" column="30" selection-start-line="913" selection-start-column="30" selection-end-line="913" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,9 +91,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="948" />
-    <option name="width" value="981" />
-    <option name="height" value="1092" />
+    <option name="x" value="949" />
+    <option name="width" value="980" />
+    <option name="height" value="1091" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -103,7 +103,7 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538825863281" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538827535829" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -223,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538767908151</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Ejercicio 25 al 28 de funciones.">
+      <created>1538825890002</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1538825890002</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -273,13 +280,14 @@
     <MESSAGE value="Ejercicio 22 de funciones." />
     <MESSAGE value="Ejercicio 23 de funciones." />
     <MESSAGE value="Ejercicio 24 de funciones." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 24 de funciones." />
+    <MESSAGE value="Ejercicio 25 al 28 de funciones." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 25 al 28 de funciones." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="446" column="34" lean-forward="true" selection-start-line="446" selection-start-column="34" selection-end-line="446" selection-end-column="34" />
+        <state relative-caret-position="449">
+          <caret line="913" column="30" selection-start-line="913" selection-start-column="30" selection-end-line="913" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

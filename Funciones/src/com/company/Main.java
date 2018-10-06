@@ -442,6 +442,7 @@ public class Main
         System.out.println("[26] DiasEntreFechas");
         System.out.println("[27] HorasASegundos");
         System.out.println("[28] EscribeHoraBonita");
+        System.out.println("[29] EscribeSegundosBonitos");
         System.out.println();
         System.out.print("Elige opción: ");
         int opcion = sc.nextInt();
@@ -903,6 +904,14 @@ public class Main
                 s = sc.nextInt();
 
                 EscribeHoraBonita(h, m, s);
+            }
+            break;
+
+            case 29:
+            {
+                //Escribe una función “EscribeSegundosBonito” a la que le pasas un parámetro que
+                //corresponde al número de segundos y te escribe por pantalla la hora en formato
+                //“HH:MM:SS”. 
             }
             break;
         }
