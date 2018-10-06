@@ -39,23 +39,24 @@
     <session id="-574260648">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.4" value="4" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="9510" />
-          <entry key="txt" value="81" />
+          <entry key="java" value="12037" />
+          <entry key="txt" value="82" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9510" />
-          <entry key="PLAIN_TEXT" value="81" />
+          <entry key="JAVA" value="12037" />
+          <entry key="PLAIN_TEXT" value="82" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open" />
@@ -68,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="735" column="47" selection-start-line="735" selection-start-column="47" selection-end-line="735" selection-end-column="47" />
+            <state relative-caret-position="286">
+              <caret line="446" column="34" lean-forward="true" selection-start-line="446" selection-start-column="34" selection-end-line="446" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,7 +103,7 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538657722817" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538825863281" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -215,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538657704305</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Ejercicio 24 de funciones.">
+      <created>1538767908151</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1538767908151</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -264,13 +272,14 @@
     <MESSAGE value="Ejercicio 17 y 18 funciones." />
     <MESSAGE value="Ejercicio 22 de funciones." />
     <MESSAGE value="Ejercicio 23 de funciones." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 23 de funciones." />
+    <MESSAGE value="Ejercicio 24 de funciones." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 24 de funciones." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="735" column="47" selection-start-line="735" selection-start-column="47" selection-end-line="735" selection-end-column="47" />
+        <state relative-caret-position="286">
+          <caret line="446" column="34" lean-forward="true" selection-start-line="446" selection-start-column="34" selection-end-line="446" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

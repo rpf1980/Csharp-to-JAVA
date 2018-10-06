@@ -342,6 +342,71 @@ public class Main
         return diaHoy;
     }
 
+    static int DiasTranscurridos1980(int dia, int mes, int anio)
+    {
+        int sumaAnios = 0;  //Variable que contendrá cantidad en días de los años correspondientes
+        int i;
+
+        for(i = 1980; i < anio; i++)
+        {
+            if(Bisiesto(anio))
+            {
+                sumaAnios = sumaAnios + 366;
+            }
+            else
+            {
+                sumaAnios = sumaAnios + 365;
+            }
+        }
+        sumaAnios = sumaAnios + DiasTranscurridos(dia, mes, anio);
+        return sumaAnios;
+    }
+
+    static int DiasEntreFechas(int dia1, int mes1, int anio1, int dia2, int mes2, int anio2)
+    {
+        int entreFechas;
+        entreFechas = DiasTranscurridos1980(dia2, mes2, anio2) - DiasTranscurridos1980(dia1, mes1, anio1);
+        return entreFechas;
+    }
+
+    static int HorasASegundos(int hora, int minuto, int segundo)
+    {
+        int totalSegundos;
+        int horasAsegundos = (hora * 60) * 60;
+        int minutosAsegundos = minuto * 60;
+
+        totalSegundos = horasAsegundos + minutosAsegundos + segundo;
+        return totalSegundos;
+    }
+
+    static void EscribeHoraBonita(int h, int m, int s)
+    {
+        if(h < 10)
+        {
+            System.out.print("0" + h + ":");
+        }
+        else
+        {
+            System.out.print(h + ":");
+        }
+        if(m < 10)
+        {
+            System.out.print("0" + m + ":");
+        }
+        else
+        {
+            System.out.print(m + ":");
+        }
+        if(s < 10)
+        {
+            System.out.print("0" + s);
+        }
+        else
+        {
+            System.out.print(s);
+        }
+    }
+
 
     public static void main(String[] args)
     {
@@ -373,6 +438,10 @@ public class Main
         System.out.println("[22] DiasMes");
         System.out.println("[23] DiasMes2");
         System.out.println("[24] DiasTranscurridos");
+        System.out.println("[25] DiasTranscurridos1980");
+        System.out.println("[26] DiasEntreFechas");
+        System.out.println("[27] HorasASegundos");
+        System.out.println("[28] EscribeHoraBonita");
         System.out.println();
         System.out.print("Elige opción: ");
         int opcion = sc.nextInt();
@@ -735,6 +804,105 @@ public class Main
                 System.out.println();
                 System.out.println("Transcurren " + dias + " días desde la fecha indicada");
 
+            }
+            break;
+
+            case 25:
+            {
+                //Escribe una función “DiasTranscurridos1980” a la que le pasamos un día, mes y año y
+                //nos diga cuántos días han transcurrido desde el 01/01/1980 hasta ese día.
+
+                int dia, mes, anio;
+                int transcurridos;
+
+                String d, h = "";
+
+                System.out.print("Escribe día: ");
+                dia = sc.nextInt();
+                System.out.print("Escribe mes: ");
+                mes = sc.nextInt();
+                System.out.print("Escribe año: ");
+                anio = sc.nextInt();
+
+                transcurridos = DiasTranscurridos1980(dia, mes, anio);
+
+                if(transcurridos == 1)
+                {
+                    h = "Ha";
+                    d = "día";
+                }
+                else
+                {
+                    h = "Han";
+                    d = "dias";
+                }
+
+                System.out.println(h + " transcurrido " + transcurridos + " " + d + " desde 1980");
+
+            }
+            break;
+
+            case 26:
+            {
+                //Escribe una función “DiasEntreFechas” a la que le pasamos 6 enteros. Un día, mes y
+                //año y otro día, mes y año, y nos dice cuántos días han pasado entre ambas fechas.
+
+                int dia1, mes1, anio1, dia2, mes2, anio2;
+                int entreFechas;
+
+                System.out.println("PRIMERA FECHA (desde...): ");
+                System.out.print("Día: ");
+                dia1 = sc.nextInt();
+                System.out.print("Mes: ");
+                mes1 = sc.nextInt();
+                System.out.print("Año: ");
+                anio1 = sc.nextInt();
+
+                System.out.println("SEGUNDA FECHA (hasta....): ");
+                System.out.print("Día: ");
+                dia2 = sc.nextInt();
+                System.out.print("Mes: ");
+                mes2 = sc.nextInt();
+                System.out.print("Año: ");
+                anio2 = sc.nextInt();
+
+                entreFechas = DiasEntreFechas(dia1, mes1, anio1, dia2, mes2, anio2);
+                System.out.println("Total de días entre fechas = " + entreFechas);
+            }
+            break;
+
+            case 27:
+            {
+                //Escribe una función “HoraASegundos” a la que le pasas 3 parámetros enteros (hora,
+                //minutos y segundos) y te devuelve el total de segundos.
+
+                int h, m, s, totalSegundos;
+                System.out.print("Horas: ");
+                h = sc.nextInt();
+                System.out.print("Minutos: ");
+                m = sc.nextInt();
+                System.out.print("Segundos: ");
+                s = sc.nextInt();
+
+                totalSegundos = HorasASegundos(h, m, s);
+                System.out.print("Total segundos = " + totalSegundos);
+            }
+            break;
+
+            case 28:
+            {
+                //Escribe una función “EscribeHoraBonita” a la que le pasas tres parámetros (hora,
+                //minutos y segundos) y te escribe por pantalla la hora en formato “HH:MM:SS”.
+
+                int h, m, s;
+                System.out.print("Horas: ");
+                h = sc.nextInt();
+                System.out.print("Minutos: ");
+                m = sc.nextInt();
+                System.out.print("Segundos: ");
+                s = sc.nextInt();
+
+                EscribeHoraBonita(h, m, s);
             }
             break;
         }
