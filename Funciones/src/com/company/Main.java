@@ -443,6 +443,7 @@ public class Main
         System.out.println("[27] HorasASegundos");
         System.out.println("[28] EscribeHoraBonita");
         System.out.println("[29] EscribeSegundosBonitos");
+        System.out.println("[30] SegundosTrasncurridos");
         System.out.println();
         System.out.print("Elige opción: ");
         int opcion = sc.nextInt();
@@ -911,7 +912,15 @@ public class Main
             {
                 //Escribe una función “EscribeSegundosBonito” a la que le pasas un parámetro que
                 //corresponde al número de segundos y te escribe por pantalla la hora en formato
-                //“HH:MM:SS”. 
+                //“HH:MM:SS”.
+            }
+            break;
+
+            case 30:
+            {
+                // Escribe una función “SegundosTranscurridos” a la que le pasas 2 horas (en total, 6
+                //parámetros: hora, minutos y segundos para cada una de las dos horas) y te dice
+                //cuántos segundos han transcurrido entre una y otra. 
             }
             break;
         }
