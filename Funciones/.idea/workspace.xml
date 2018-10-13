@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0e3b6b6f-ab27-417c-94a3-2ce87061fdc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +38,7 @@
     <session id="-574260648">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.4" value="4" />
           <entry key="project.open.time.5" value="1" />
@@ -49,14 +48,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="12090" />
-          <entry key="txt" value="89" />
+          <entry key="java" value="12142" />
+          <entry key="txt" value="128" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12090" />
-          <entry key="PLAIN_TEXT" value="89" />
+          <entry key="JAVA" value="12142" />
+          <entry key="PLAIN_TEXT" value="128" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open" />
@@ -70,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="449">
-              <caret line="913" column="30" selection-start-line="913" selection-start-column="30" selection-end-line="913" selection-end-column="30" />
+              <caret line="922" column="70" selection-start-line="922" selection-start-column="70" selection-end-line="922" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,7 +102,7 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538827703915" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538827748109" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -230,7 +229,21 @@
       <option name="project" value="LOCAL" />
       <updated>1538825890002</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Preparando ejercicio 29 de funciones">
+      <created>1538827562345</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1538827562345</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Preparando ejercicio 30 de funciones">
+      <created>1538827726169</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1538827726169</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -281,13 +294,15 @@
     <MESSAGE value="Ejercicio 23 de funciones." />
     <MESSAGE value="Ejercicio 24 de funciones." />
     <MESSAGE value="Ejercicio 25 al 28 de funciones." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 25 al 28 de funciones." />
+    <MESSAGE value="Preparando ejercicio 29 de funciones" />
+    <MESSAGE value="Preparando ejercicio 30 de funciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="Preparando ejercicio 30 de funciones" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
-          <caret line="913" column="30" selection-start-line="913" selection-start-column="30" selection-end-line="913" selection-end-column="30" />
+          <caret line="922" column="70" selection-start-line="922" selection-start-column="70" selection-end-line="922" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

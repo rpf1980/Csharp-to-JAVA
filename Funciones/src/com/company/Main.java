@@ -920,7 +920,7 @@ public class Main
             {
                 // Escribe una función “SegundosTranscurridos” a la que le pasas 2 horas (en total, 6
                 //parámetros: hora, minutos y segundos para cada una de las dos horas) y te dice
-                //cuántos segundos han transcurrido entre una y otra. 
+                //cuántos segundos han transcurrido entre una y otra.
             }
             break;
         }
