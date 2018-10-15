@@ -224,7 +224,7 @@ public class Main
         System.out.println("[12] RellenaEnOrdenDesc");
         System.out.println("[13] RellenaAleatorio");
         System.out.println("[14] EstaOrdenado");
-        System.out.println("[15] NumeroImpares");
+        System.out.println("[15] NumerosImpares");
         System.out.println();
         System.out.print("Elige una opción: ");
         int opcion = sc.nextInt();
