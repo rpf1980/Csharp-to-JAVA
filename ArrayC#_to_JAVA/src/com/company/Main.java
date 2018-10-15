@@ -140,6 +140,69 @@ public class Main
         return media;
     }
 
+    static void RellenaEnOrden(int[] a)
+    {
+        int ordena = 1;
+        int i;
+        for(i = 0; i < a.length; i++)
+        {
+            a[i] = ordena;
+            ordena = ordena + 1;
+        }
+    }
+
+    static void RellenaEnOrdenDesc(int[] a)
+    {
+        int ordena = a.length;
+        int i;
+        for(i = 0; i < a.length; i++)
+        {
+            a[i] = ordena;
+            ordena = ordena - 1;
+        }
+    }
+
+    static void RellenaAleatorio(int[] a)
+    {
+        int alea;
+        int i;
+
+        for(i = 0; i < a.length; i++)
+        {
+            alea = (int)(Math.random()*10+1);
+            a[i] = alea;
+        }
+
+    }
+
+    static boolean EstaOrdenado(int[] a)
+    {
+        boolean ordenado = true;
+        int i;
+        for(i = 0; i < a.length-1; i++)
+        {
+            if(a[i] > a[i + 1])
+            {
+                ordenado = false;
+            }
+        }
+        return ordenado;
+    }
+
+    static int NumeroImpares(int[] a)
+    {
+        int contador = 0;
+        int i;
+        for(i = 0; i < a.length; i++)
+        {
+            if(a[i] %2 != 0)
+            {
+                contador += 1;
+            }
+        }
+        return contador;
+    }
+
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
@@ -157,6 +220,11 @@ public class Main
         System.out.println("[8] SumaArray");
         System.out.println("[9] MediaArray5");
         System.out.println("[10] MediaArray");
+        System.out.println("[11] RellenaEnOrden");
+        System.out.println("[12] RellenaEnOrdenDesc");
+        System.out.println("[13] RellenaAleatorio");
+        System.out.println("[14] EstaOrdenado");
+        System.out.println("[15] NumeroImpares");
         System.out.println();
         System.out.print("Elige una opción: ");
         int opcion = sc.nextInt();
@@ -294,6 +362,70 @@ public class Main
                 EscribeArray(array);
                 media = MediaArray(array);
                 System.out.println("\n MEDIA = " + media);
+            }
+            break;
+
+            case 11:
+            {
+                //Escribe una función “RellenaEnOrden” que nos rellena un array de enteros con los
+                //números desde el 1 en adelante (1, 2, 3, 4... hasta el tamaño del array).
+
+                int[] a = new int[4];
+                RellenaEnOrden(a);
+                EscribeArray(a);
+            }
+            break;
+
+            case 12:
+            {
+                //Escribe una función “RellenaEnOrdenDesc” que nos rellena un array con los valores
+                //siguientes: tamaño del array, tamaño del array-1, etc., 3, 2, 1.
+
+                int[] a = new int[5];
+                RellenaEnOrdenDesc(a);
+                EscribeArray(a);
+            }
+            break;
+
+            case 13:
+            {
+                //Escribe una función “RellenaAleatorio” a la que le pasamos un array de enteros y nos
+                //lo rellena de valores aleatorios entre 1 y 10.
+
+                int[] array = new int[20];
+                RellenaAleatorio(array);
+                EscribeArray(array);
+
+            }
+            break;
+
+            case 14:
+            {
+                // Escribe una función “EstaOrdenado” a la que le pasas un array de enteros y te
+                //devuelve un booleano que será verdadero si los elementos del array se encuentran en
+                //orden ascendente.
+
+                boolean ordenado;
+                int[] array = {12,5,8,9};
+
+                EscribeArray(array);
+                System.out.println("\n" + EstaOrdenado(array));
+
+            }
+            break;
+
+            case 15:
+            {
+                // Escribe una función “NumeroImpares” a la que le pasas un array de enteros y te
+                //devuelve un entero que corresponde a la cantidad de números impares que tenemos
+                //en el array.
+
+                int[] array = {3,7,9,2,4,6,8};
+                int impares;
+
+                EscribeArray(array);
+                impares = NumeroImpares(array);
+                System.out.println("\n"+"IMPARES = " + impares);
             }
             break;
         }
