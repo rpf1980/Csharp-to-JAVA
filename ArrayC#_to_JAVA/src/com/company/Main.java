@@ -203,6 +203,77 @@ public class Main
         return contador;
     }
 
+    static int MinArray(int[] a)
+    {
+        int min = a[0];
+        int i;
+        for(i = 0; i < a.length; i++)
+        {
+            if(a[i] < min)
+            {
+                min = a[i];
+            }
+        }
+        return min;
+    }
+
+    static int MaxArray(int[] a)
+    {
+        int max = a[0];
+        int i;
+        for(i = 0; i < a.length; i++)
+        {
+            if(a[i] > max)
+            {
+                max = a[i];
+            }
+        }
+        return max;
+    }
+
+    static int NumeroAprobados(int[] a)
+    {
+        int aprobados = 0;
+        int i;
+
+        for(i = 0;i < a.length; i++)
+        {
+            if(a[i] >= 5 && a[i] <= 10)
+            {
+                aprobados += 1;
+            }
+        }
+        return aprobados;
+    }
+
+    static int PorEncimaDe(int[] a, int limite)
+    {
+        int contador = 0;
+        int i;
+        for(i = 0; i < a.length; i++)
+        {
+            if(a[i] >= limite)
+            {
+                contador += 1;
+            }
+        }
+        return contador;
+    }
+
+    static int CuantosCeros(int[] a)
+    {
+        int contador = 0;
+        int i;
+        for(i = 0; i < a.length; i++)
+        {
+            if(a[i] == 0)
+            {
+                contador += 1;
+            }
+        }
+        return contador;
+    }
+
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
@@ -225,6 +296,11 @@ public class Main
         System.out.println("[13] RellenaAleatorio");
         System.out.println("[14] EstaOrdenado");
         System.out.println("[15] NumerosImpares");
+        System.out.println("[16] MinArray");
+        System.out.println("[17] MaxArray");
+        System.out.println("[18] NumeroAprobados");
+        System.out.println("[19] PorEncimaDe");
+        System.out.println("[20] CuantosCeros");
         System.out.println();
         System.out.print("Elige una opción: ");
         int opcion = sc.nextInt();
@@ -426,6 +502,80 @@ public class Main
                 EscribeArray(array);
                 impares = NumeroImpares(array);
                 System.out.println("\n"+"IMPARES = " + impares);
+            }
+            break;
+
+            case 16:
+            {
+                //Escribe una función “MinArray” a la que le pasas un array y te devuelve el valor más
+                //pequeño de los contenidos en dicho array.
+
+                int min;
+                int[] a = {9,89,1,6,13};
+
+                EscribeArray(a);
+                min = MinArray(a);
+                System.out.println("\n" + min);
+            }
+            break;
+
+            case 17:
+            {
+                //Escribe una función “MaxArray” que te devuelve el más grande.
+                int max;
+                int[] a = {23,4,78,100,1,2,7};
+
+                EscribeArray(a);
+                max = MaxArray(a);
+                System.out.println("\n" + max);
+            }
+            break;
+
+            case 18:
+            {
+                // Escribe una función “NumeroAprobados” a la que se le pasa un array de enteros y,
+                //suponiendo que son notas, nos devuelve el número de aprobados (valores entre 5 y
+                //10).
+
+                int[] a = {4,3,2,7,8,9,6};
+                int aprobados;
+
+                EscribeArray(a);
+                aprobados = NumeroAprobados(a);
+                System.out.println("\n" + aprobados);
+
+            }
+            break;
+
+            case 19:
+            {
+                // Escribe una función “PorEncimaDe” a la que le pasamos un valor “limite” y nos
+                //devuelve cuántos elementos del array son iguales o mayores que ese límite. Por
+                //ejemplo, le pasamos el valor 10 y nos dice cuántos elementos son 10 o más.
+
+                int[] a = {23,45,67,8,9,1};
+                int limite = 20;
+                int contador;
+
+                EscribeArray(a);
+                contador = PorEncimaDe(a, limite);
+                System.out.println("\n" + contador);
+
+            }
+            break;
+
+            case 20:
+            {
+                // Escribe una función “CuantosCeros” a la que le pasamos un array y nos devuelve un
+                //entero que nos dice cuántos elementos tienen el valor 0.
+
+                int contador;
+                int[] a = {0,0,0,0,0,0,0,12,45,78,8};
+
+                EscribeArray(a);
+                contador = CuantosCeros(a);
+                System.out.println("\n" + contador);
+
             }
             break;
         }

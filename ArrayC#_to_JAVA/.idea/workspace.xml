@@ -16,23 +16,23 @@
     <session id="-1081771518">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="2" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4689" />
-          <entry key="txt" value="36" />
+          <entry key="java" value="6005" />
+          <entry key="txt" value="93" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4689" />
-          <entry key="PLAIN_TEXT" value="36" />
+          <entry key="JAVA" value="6005" />
+          <entry key="PLAIN_TEXT" value="93" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open" />
@@ -45,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="427" column="38" selection-start-line="427" selection-start-column="38" selection-end-line="427" selection-end-column="38" />
+            <state relative-caret-position="407">
+              <caret line="576" column="50" selection-start-line="576" selection-start-column="50" selection-end-line="576" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -126,7 +126,21 @@
       <option name="project" value="LOCAL" />
       <updated>1539515755262</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ejercicios del 11 al 15 array to java">
+      <created>1539620316925</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1539620316925</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Corrección ortográfica en menú, ejercicio 15">
+      <created>1539620424888</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1539620424888</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -166,13 +180,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ejercicios del 1 al 10 array to java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejercicios del 1 al 10 array to java" />
+    <MESSAGE value="Ejercicios del 11 al 15 array to java" />
+    <MESSAGE value="Corrección ortográfica en menú, ejercicio 15" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrección ortográfica en menú, ejercicio 15" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="427" column="38" selection-start-line="427" selection-start-column="38" selection-end-line="427" selection-end-column="38" />
+        <state relative-caret-position="407">
+          <caret line="576" column="50" selection-start-line="576" selection-start-column="50" selection-end-line="576" selection-end-column="50" />
         </state>
       </provider>
     </entry>
