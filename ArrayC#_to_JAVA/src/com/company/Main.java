@@ -274,6 +274,113 @@ public class Main
         return contador;
     }
 
+    static void CopiaArray(int[] a, int[] b)
+    {
+        int i;
+        int j = 0;
+
+        if(a.length == b.length)
+        {
+            for(i = 0; i < a.length; i++, j++)
+            {
+                b[j] = b[j] + a[i];
+            }
+        }
+        else
+        {
+            System.out.println("Error. Los arrays no tienen el mismo tamaño");
+        }
+    }
+
+    static void CopiaArrayInvertido(int[] a, int[] b)
+    {
+        int i;
+        int j = 0;
+        int guardaPrimeraPosicion = a[0];
+
+        if(a.length == b.length)
+        {
+            for(i = a.length-1; i > 0; i--,j++)
+            {
+                b[j] = b[j] + a[i];
+            }
+            b[j] += guardaPrimeraPosicion;
+        }
+        else
+        {
+            System.out.println("Error. Los arrays no son de igual tamaño.");
+        }
+
+    }
+
+    static void SumaArrays(int[] a, int[] b, int[] suma)
+    {
+        int i;
+
+        if(a.length == b.length && b.length == suma.length)
+        {
+            for(i = 0; i < a.length; i++)
+            {
+                suma[i] = a[i] + b[i];
+            }
+        }
+        else
+        {
+            System.out.println("ERROR");
+        }
+    }
+
+    static void RestaArrays(int[] a, int[] b, int[] resta)
+    {
+        int i;
+
+        if(a.length == b.length && b.length == resta.length)
+        {
+            for(i = 0; i < a.length; i++)
+            {
+                resta[i] = a[i] - b[i];
+            }
+        }
+        else
+        {
+            System.out.println("ERROR");
+        }
+    }
+
+    static void MultiplicaArrays(int[] a, int[] b, int[] multiplica)
+    {
+        int i;
+
+        if(a.length == b.length && b.length == multiplica.length)
+        {
+            for(i = 0; i < a.length; i++)
+            {
+                multiplica[i] = a[i] * b[i];
+            }
+        }
+        else
+        {
+            System.out.println("ERROR");
+        }
+    }
+
+    static void DivideArray(int[] a, int[] b, int[] divide)
+    {
+        int i;
+
+        if(a.length == b.length && b.length == divide.length)
+        {
+            for(i = 0; i < a.length; i++)
+            {
+                divide[i] = a[i] / b[i];
+            }
+        }
+        else
+        {
+            System.out.println("ERROR");
+        }
+    }
+
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
@@ -301,6 +408,12 @@ public class Main
         System.out.println("[18] NumeroAprobados");
         System.out.println("[19] PorEncimaDe");
         System.out.println("[20] CuantosCeros");
+        System.out.println("[21] CopiaArray");
+        System.out.println("[22] CopiaArrayInvertido");
+        System.out.println("[23] SumaArrays");
+        System.out.println("[24] RestaArrays");
+        System.out.println("[25] MultiplicaArrays");
+        System.out.println("[26] DivideArray");
         System.out.println();
         System.out.print("Elige una opción: ");
         int opcion = sc.nextInt();
@@ -576,6 +689,114 @@ public class Main
                 contador = CuantosCeros(a);
                 System.out.println("\n" + contador);
 
+            }
+            break;
+
+            case 21:
+            {
+                //Escribe una función “CopiaArray” a la que le pasas dos arrays por parámetro (array1 y
+                //array2, por ejemplo) del mismo tamaño (se debería comprobar dentro de la función).
+                //La función copiara el contenido del primer array al segundo array.
+
+                int[] a = {100,200,300};
+                int[] b = new int[a.length];
+
+                System.out.print("Array 'a' = ");
+                EscribeArray(a);
+                CopiaArray(a,b);
+                System.out.println();
+                System.out.print("Array 'b' = ");
+                EscribeArray(b);
+
+            }
+            break;
+
+            case 22:
+            {
+                //Escribe una función “CopiaArrayInvertido” a la que le pasas dos arrays por parámetro y
+                //te copia el contenido del primer array al segundo array pero en orden inverso (Ej.: si el
+                //primero es [5,6,7,8,9], en el segundo se copiará [9,8,7,6,5]).
+
+                int[] a = {10,20,30,40,50};
+                int[] b = new int[a.length];
+
+                System.out.print("Array 'a' = ");
+                EscribeArray(a);
+                CopiaArrayInvertido(a,b);
+                System.out.print("\n" + "Array 'b' = ");
+                EscribeArray(b);
+            }
+            break;
+
+            case 23:
+            {
+                // Escribe una función “SumaArrays” a la que le pasamos tres arrays. Los dos primeros
+                //contendrán los datos que hay que sumar y en el tercero guardaremos el resultado (Ej.:
+                //[1,2,3] + [8, 6, 8] = [9, 8, 11]).
+
+                int[] a = {3,5,7,9};
+                int[] b = {2,2,2,2};
+                int[] c = new int[a.length];
+
+                EscribeArray(a);
+                System.out.print(" + ");
+                EscribeArray(b);
+                System.out.print(" = ");
+                SumaArrays(a,b,c);
+                EscribeArray(c);
+
+            }
+            break;
+
+            case 24:
+            {
+                // Escribe también la función “RestaArrays”
+
+                int[] a = {23,35,17};
+                int[] b = {3,5,7};
+                int[] c = new int[a.length];
+
+                EscribeArray(a);
+                System.out.print(" - ");
+                EscribeArray(b);
+                RestaArrays(a,b,c);
+                System.out.print(" = ");
+                EscribeArray(c);
+
+            }
+            break;
+
+            case 25:
+            {
+                //Escribe también la función "MultiplicaArrays"
+
+                int[] a = {3,4,5,6};
+                int[] b = {3,3,3,3};
+                int[] c = new int[a.length];
+
+                EscribeArray(a);
+                System.out.print(" x ");
+                EscribeArray(b);
+                MultiplicaArrays(a,b,c);
+                System.out.print(" = ");
+                EscribeArray(c);
+            }
+            break;
+
+            case 26:
+            {
+                //Escribe también la función "DivideArray"
+
+                int[] a = {24,36,45};
+                int[] b = {6,3,5};
+                int[] c = new int[a.length];
+
+                EscribeArray(a);
+                System.out.print(" / ");
+                EscribeArray(b);
+                DivideArray(a,b,c);
+                System.out.print(" = ");
+                EscribeArray(c);
             }
             break;
         }
